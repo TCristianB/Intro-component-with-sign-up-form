@@ -1,6 +1,7 @@
 const inputForm = document.querySelectorAll('.input-form')
 const iconError = document.querySelectorAll('.icon-error')
 const textError = document.querySelectorAll('.text-error')
+const inputEmail = document.querySelector('.input-email')
 const submitButton = document.getElementById('input-button')
 
 submitButton.addEventListener('click', (e) => {
