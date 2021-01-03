@@ -77,14 +77,47 @@ p {
     justify-content: center;
 }
 
-.container__access--form form input {
-    padding: 12px;
+.container__access--form form label{
+    
+    width: 85%;
     margin-bottom: 10px;
-    font-weight: bold;
-    width: 75%;
-    outline: none;
     color: black;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container__access--form form label div {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
     border: 1px solid rgb(214, 214, 214);
+}
+
+.container__access--form form label div input {
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    width: 80%;
+    padding-left: 7px;
+}
+
+.icon-error{
+    display: none;
+}
+
+.text-error {
+    color: hsl(0, 100%, 66%);
+    text-align: end;
+    font-size: 1.3rem;
+    display: none;
+    margin-top: 5px;
+}
+
+.visible {
+    display: block;
 }
 
 #input-button {
@@ -94,6 +127,9 @@ p {
     border: 0;
     border-radius:  7px;
     width: 85%;
+    margin: 10px 0;
+    outline: none;
+    cursor: pointer;
 }
 
 .term-services {
@@ -106,6 +142,8 @@ p {
 
 .term-services a{
     color: hsl(0, 100%, 74%, .7);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1440px){
@@ -117,6 +155,13 @@ p {
     .container__description {
         width: 50%;
         justify-self: center;
+    }
+
+    #container__description--title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        text-align: start;
+        margin-bottom: 10px;
     }
 
     .container__access {
